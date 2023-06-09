@@ -25,6 +25,7 @@ pipeline:
                     shell: Sh
                     command: |-
                       echo "Harness Go app"
+                      go mod init Golang-CICD-Tutorial
                       go build
                       go test
           platform:
